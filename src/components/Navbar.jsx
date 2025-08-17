@@ -17,7 +17,7 @@ export default function Navbar() {
   const opacity = Math.max(1 - scrollPosition / 300, 0.5);
 
   return (
-    <nav className='fixed top-0 w-full z-100 p-4 shadow-lg backdrop-blur-md flex items-center justify-between' style={{ backgroundColor: `rgba(0, 0, 0, ${opacity})` }}>
+    <nav className='fixed top-0 w-full z-10 p-4 shadow-lg backdrop-blur-md flex items-center justify-between' style={{ backgroundColor: `rgba(0, 0, 0, ${opacity})` }}>
       <div className="left">
         <span className='text-xl font-bold'>PORTFOLIO</span>
       </div>
