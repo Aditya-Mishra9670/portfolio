@@ -4,7 +4,7 @@ import image from '../assets/image.png';
 
 export default function Intro() {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col md:flex-row items-center justify-center px-8 md:px-16 relative overflow-hidden">
+    <section className="min-h-screen bg-black text-white flex flex-col md:flex-row items-center justify-center px-6 sm:px-10 md:px-16 pt-24 md:pt-32 pb-16 relative overflow-hidden">
       
       {/* Left Section */}
       <motion.div
@@ -13,15 +13,15 @@ export default function Intro() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-snug sm:leading-tight">
           Hello, I'm{" "}
           <span className="text-cyan-400 drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]">
             Aditya Mishra
           </span>
         </h1>
         
-        <p className="text-xl md:text-2xl mt-6 text-gray-300">
-           Aspiring <span className="text-emerald-400">Software Development Engineer</span> <br />
+        <p className="text-base sm:text-lg md:text-2xl mt-6 text-gray-300 max-w-xl mx-auto md:mx-0">
+          Aspiring <span className="text-emerald-400">Software Development Engineer</span> <br />
           Passionate about <span className="text-cyan-300">Web Development</span>, 
           <span className="text-emerald-300"> Problem Solving</span>, and 
           <span className="text-cyan-300"> Scalable Systems</span>.
@@ -35,13 +35,13 @@ export default function Intro() {
         >
           <a
             href="#projects"
-            className="px-6 py-3 bg-cyan-600 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(0,255,255,0.8)] hover:bg-cyan-500 transition transform hover:scale-105"
+            className="px-5 sm:px-6 py-2 sm:py-3 bg-cyan-600 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(0,255,255,0.8)] hover:bg-cyan-500 transition transform hover:scale-105 text-sm sm:text-base"
           >
             View Projects
           </a>
           <a
             href="mailto:mishraadityamishra19@outlook.com"
-            className="px-6 py-3 bg-emerald-600 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(16,255,140,0.8)] hover:bg-emerald-500 transition transform hover:scale-105"
+            className="px-5 sm:px-6 py-2 sm:py-3 bg-emerald-600 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(16,255,140,0.8)] hover:bg-emerald-500 transition transform hover:scale-105 text-sm sm:text-base"
           >
             Hire Me
           </a>
@@ -58,13 +58,13 @@ export default function Intro() {
         <img
           src={image}
           alt="Aditya Mishra"
-          className="w-72 md:w-[400px] rounded-full shadow-lg hover:shadow-[0_0_40px_rgba(0,255,255,0.8)] transition duration-500"
+          className="w-48 sm:w-64 md:w-[400px] rounded-full shadow-lg hover:shadow-[0_0_40px_rgba(0,255,255,0.8)] transition duration-500"
         />
       </motion.div>
 
       {/* Background Glow Effects */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-screen filter blur-[120px] opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-72 h-72 bg-emerald-500 rounded-full mix-blend-screen filter blur-[120px] opacity-30 animate-pulse"></div>
-    </div>
+      <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-cyan-500 rounded-full mix-blend-screen filter blur-[90px] sm:blur-[120px] opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-48 sm:w-72 h-48 sm:h-72 bg-emerald-500 rounded-full mix-blend-screen filter blur-[90px] sm:blur-[120px] opacity-30 animate-pulse"></div>
+    </section>
   );
 }
