@@ -4,7 +4,7 @@ import image from '../assets/image.png';
 
 export default function Intro() {
   return (
-    <section className="min-h-screen bg-black text-white flex flex-col md:flex-row items-center justify-center px-6 sm:px-10 md:px-16 pt-24 md:pt-32 pb-16 relative overflow-hidden">
+    <section id="home" className="min-h-screen bg-black text-white flex flex-col md:flex-row items-center justify-center px-6 sm:px-10 md:px-16 pt-24 md:pt-32 pb-16 relative overflow-hidden">
       
       {/* Left Section */}
       <motion.div
@@ -44,6 +44,14 @@ export default function Intro() {
             className="px-5 sm:px-6 py-2 sm:py-3 bg-emerald-600 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(16,255,140,0.8)] hover:bg-emerald-500 transition transform hover:scale-105 text-sm sm:text-base"
           >
             Hire Me
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1tGmbTlV1w_rMuOjSX_h-Dqc90zKwmfG0/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 sm:px-6 py-2 sm:py-3 bg-purple-600 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(147,51,234,0.8)] hover:bg-purple-500 transition transform hover:scale-105 text-sm sm:text-base"
+          >
+            Resume
           </a>
         </motion.div>
       </motion.div>

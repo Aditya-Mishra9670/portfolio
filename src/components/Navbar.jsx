@@ -23,10 +23,18 @@ export default function Navbar() {
       </div>
       <div className="right">
         <ul className='flex justify-between mt-2'>
-          <li className='px-4 py-2 hover:bg-white hover:bg-opacity-95 rounded hover:text-black cursor-pointer'>Home</li>
-          <li className='px-4 py-2 hover:bg-white hover:bg-opacity-25 hover:cursor-pointer rounded'>About</li>
-          <li className='px-4 py-2 hover:bg-white hover:bg-opacity-25 hover:cursor-pointer rounded'>Projects</li>
-          <li className='px-4 py-2 hover:bg-white hover:bg-opacity-25 hover:cursor-pointer rounded'>Contact</li>
+          <li>
+            <a href="#home" className='px-4 py-2 inline-block hover:bg-white hover:bg-opacity-95 rounded hover:text-black transition'>Home</a>
+          </li>
+          <li>
+            <a href="#about" className='px-4 py-2 inline-block hover:bg-white hover:bg-opacity-25 rounded hover:text-black transition'>About</a>
+          </li>
+          <li>
+            <a href="#projects" className='px-4 py-2 inline-block hover:bg-white hover:bg-opacity-25 rounded hover:text-black transition'>Projects</a>
+          </li>
+          <li>
+            <a href="mailto:mishraadityamishra19@outlook.com" className='px-4 py-2 inline-block hover:bg-white hover:bg-opacity-25 rounded hover:text-black transition'>Contact</a>
+          </li>
         </ul>
       </div>
     </nav>

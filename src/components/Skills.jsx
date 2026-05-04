@@ -61,7 +61,7 @@ const skillCategories = {
 
 export default function Skills() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white px-6 py-16">
+    <section id="skills" className="min-h-screen flex flex-col items-center justify-center bg-black text-white px-6 py-16">
       <h2 className="text-4xl font-bold mb-12">My Skills</h2>
 
       <div className="flex flex-col gap-16 w-full max-w-6xl">
@@ -88,6 +88,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

@@ -5,7 +5,7 @@ export default function Projects() {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.github.com/users/Aditya-Mishra9670/repos')
+    fetch('https://api.github.com/users/Aditya-Mishra9670/starred')
       .then((res) => res.json())
       .then((data) => {
         const sorted = data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
@@ -15,7 +15,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center py-12 px-4">
+    <section id="projects" className="min-h-screen bg-black text-white flex flex-col items-center py-12 px-4">
       <h2 className="text-4xl font-bold mb-12">My GitHub Projects</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-6xl">
@@ -59,6 +59,6 @@ export default function Projects() {
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

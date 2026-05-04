@@ -3,16 +3,17 @@ import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import About from "./components/About";
 
 export default function App() {
   return (
-    <h1 className="bg-black bg-opacity-90 min-h-screen text-white">
-       
+    <div className="bg-black bg-opacity-90 min-h-screen text-white">
       <Navbar />
       <Intro />
-      <Skills /> 
+      <About />
+      <Skills />
       <DsaPlatforms />
       <Projects />
-    </h1>
+    </div>
   )
 }
